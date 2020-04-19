@@ -1,9 +1,14 @@
-'use strict';
+const Typography = require("typography");
+const plugin = require("tailwindcss/plugin");
 
-module.exports = (input, {postfix = 'rainbows'} = {}) => {
-	if (typeof input !== 'string') {
-		throw new TypeError(`Expected a string, got ${typeof input}`);
-	}
+const DEFAULT_CONFIG = {
+	includeNormalize: false
+};
 
-	return `${input} & ${postfix}`;
+module.exports = function(config) {
+	const theme = new Typography(Object.assign(DEFAULT_CONFIG, config););
+
+	return plugin(function({ addBase }) {
+		addBase(theme.toJSON());
+	});
 };

@@ -2,41 +2,37 @@
 
 > Tailwind CSS plugin to inject Typography.js styles
 
-
 ## Install
 
 ```
-$ npm install tailwindcss-typography-js
+$ npm install --save tailwindcss-typography-js
 ```
-
 
 ## Usage
 
 ```js
-const tailwindcssTypographyJs = require('tailwindcss-typography-js');
+// tailwindcss.config.js
+const typography = require("tailwindcss-typography-js");
 
-tailwindcssTypographyJs('unicorns');
-//=> 'unicorns & rainbows'
+// Option 1 - Using a configuration
+const typographyTheme = typography({
+	baseFontSize: "18px",
+	baseLineHeight: 1.666,
+	headerFontFamily: ["Helvetica Neue", "sans-serif"],
+	bodyFontFamily: ["Georgia", "serif"]
+});
+
+// Option 2 - Using a theme
+import funstonTheme from "typography-theme-funston";
+const typographyTheme = typography(funstonTheme);
+
+// Add to the plugin list.
+module.exports = {
+	theme: {
+		extend: {}
+	},
+	variants: {},
+	plugins: [typographyTheme],
+	corePlugins: {}
+};
 ```
-
-
-## API
-
-### tailwindcssTypographyJs(input, options?)
-
-#### input
-
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### foo
-
-Type: `boolean`\
-Default: `false`
-
-Lorem ipsum.

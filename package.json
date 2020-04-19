@@ -1,6 +1,6 @@
 {
 	"name": "tailwindcss-typography-js",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Tailwind CSS plugin to inject Typography.js styles",
 	"license": "MIT",
 	"repository": "manishrc/tailwindcss-typography-js",
@@ -19,6 +19,9 @@
 	"keywords": [
 		""
 	],
-	"dependencies": {},
+	"dependencies": {
+		"tailwindcss": "^1.2.0",
+		"typography": "^0.16.19"
+	},
 	"devDependencies": {}
 }
