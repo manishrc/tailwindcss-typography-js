@@ -1,0 +1,24 @@
+{
+	"name": "tailwindcss-typography-js",
+	"version": "0.0.0",
+	"description": "Tailwind CSS plugin to inject Typography.js styles",
+	"license": "MIT",
+	"repository": "manishrc/tailwindcss-typography-js",
+	"author": {
+		"name": "Manish Chiniwalar",
+		"email": "hi@manishrc.com",
+		"url": "https://manishrc.com"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		""
+	],
+	"dependencies": {},
+	"devDependencies": {}
+}
