@@ -5,21 +5,21 @@
 ## Install
 
 ```
-$ npm install --save tailwindcss-typography-js
+$ npm install --save @manishrc/tailwindcss-typography-js
 ```
 
 ## Usage
 
 ```js
 // tailwindcss.config.js
-const typography = require("tailwindcss-typography-js");
+const typography = require("@manishrc/tailwindcss-typography-js");
 
 // Option 1 - Using a configuration
 const typographyTheme = typography({
 	baseFontSize: "18px",
 	baseLineHeight: 1.666,
 	headerFontFamily: ["Helvetica Neue", "sans-serif"],
-	bodyFontFamily: ["Georgia", "serif"]
+	bodyFontFamily: ["Georgia", "serif"],
 });
 
 // Option 2 - Using a theme
@@ -29,10 +29,10 @@ const typographyTheme = typography(funstonTheme);
 // Add to the plugin list.
 module.exports = {
 	theme: {
-		extend: {}
+		extend: {},
 	},
 	variants: {},
 	plugins: [typographyTheme],
-	corePlugins: {}
+	corePlugins: {},
 };
 ```
