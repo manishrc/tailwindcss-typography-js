@@ -16,10 +16,10 @@ const typography = require("@manishrc/tailwindcss-typography-js");
 
 // Option 1 - Using a configuration
 const typographyTheme = typography({
-	baseFontSize: "18px",
-	baseLineHeight: 1.666,
-	headerFontFamily: ["Helvetica Neue", "sans-serif"],
-	bodyFontFamily: ["Georgia", "serif"],
+  baseFontSize: "18px",
+  baseLineHeight: 1.666,
+  headerFontFamily: ["Helvetica Neue", "sans-serif"],
+  bodyFontFamily: ["Georgia", "serif"],
 });
 
 // Option 2 - Using a theme
@@ -28,11 +28,11 @@ const typographyTheme = typography(funstonTheme);
 
 // Add to the plugin list.
 module.exports = {
-	theme: {
-		extend: {},
-	},
-	variants: {},
-	plugins: [typographyTheme],
-	corePlugins: {},
+  theme: {
+    extend: {},
+  },
+  variants: {},
+  plugins: [typographyTheme],
+  corePlugins: {},
 };
 ```
