@@ -2,6 +2,7 @@
 	"name": "@manishrc/tailwindcss-typography-js",
 	"version": "0.1.6",
 	"description": "Tailwind CSS plugin to inject Typography.js styles",
+	"main": "index.js",
 	"keywords": [
 		"tailwind",
 		"tailwindcss",
